@@ -1,0 +1,77 @@
+body{
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.dunkelhg {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#mainimage {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.normalpic {
+    display: block;
+    max-width: 60%;
+    max-height: 60vh; /* Maximale Höhe auf 80% der Viewport-Höhe begrenzen */
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.smallpic {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .normalpic {
+        display: none;
+    }
+
+    .smallpic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        border: 5px solid rgb(0, 0, 0);
+    }
+}
+
+audio {
+    width: 250px; /* Breite des Audio-Players */
+    height: 25px;
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+}
+
+p {
+    /*display: inline-block;*/
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    clear: both;
+    display: block;
+    color: aliceblue;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+footer a {
+    color: blue;
+    background-color: rgba(255, 255, 255);
+    padding: 2px;
+    font-size: medium;
+}
+
+a:visited {
+    color: rgb(204, 1, 1);
+}

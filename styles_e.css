@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #739ac3;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+audio {
+    width: 250px;
+    height: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#landview {
+    display: flex;
+    justify-content: center;
+}
+
+.sidepanel {
+    margin: auto;
+    position: relative;
+    height: 550px;
+    width: 450px;
+    background-image: url(images/Blumenmuster6.jpg);
+    border: 5px solid rgb(255, 255, 255);
+}
+
+#himmel {
+    margin: auto;
+    position: relative;
+    height: 550px;
+    width: 500px;
+    /*background-color: #3bc3ff;*/
+    background-image: url(images/HimmelObenHG.jpg);
+    overflow: hidden;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+#jesus {
+    height: 45%;
+    position: absolute;
+    left: 35%;  /* 35% */
+    top: 30%;  /* 30% */
+    animation: fliegen 10s infinite ease-in-out;
+    /*animation-fill-mode: forwards;*/
+    animation-direction: alternate;
+}
+
+.cloud {
+    width: 50%;
+    position: absolute;
+}
+
+#cloud1 {
+    left: 0;
+    bottom: 120%;
+    animation: schweben 10s linear 2s infinite;
+}
+
+#cloud2 {
+    right: 0;
+    bottom: 120%;
+    animation: schweben 15s linear 5s infinite;
+}
+
+#cloud3 {
+    left: 25%;
+    bottom: 120%;
+    animation: schweben 8s linear 3s infinite;
+}
+
+#cloud4 {
+    right: 25%;
+    bottom: 120%;
+    animation: schweben 18s linear 1s infinite;
+}
+
+@keyframes fliegen {
+    0%  {transform: translate(-30px,5px);}
+    20% {transform: scale(1.2,1.2);}
+    40% {transform: translate(30px,-5px);}
+    60% {transform: scale(.9,.9);}
+    80% {transform: translate(-30px,5px);}
+   100% {transform: scale(1,1);}    
+}
+
+@keyframes fliegen2 {
+    0%  {transform: translate(-20px,5px);}
+    20% {transform: scale(1.2,1.2);}
+    40% {transform: translate(20px,-5px);}
+    60% {transform: scale(.9,.9);}
+    80% {transform: translate(-20px,5px);}
+   100% {transform: scale(1,1);}
+}
+
+@keyframes schweben {
+    from  {bottom: 120%;}
+    to  {bottom: -25%;}
+}
+
+@media (orientation: portrait){
+
+    .sidepanel{
+        display: none;
+    }
+    #himmel {
+        margin: auto;
+        position: relative;
+        width: 90%;
+        height: 75vh;
+        /*background-color: #3bc3ff;*/
+        background-image: url(images/HimmelObenHG.jpg);
+        overflow: hidden;
+        border: 5px solid rgb(255, 255, 255);
+    }
+    #jesus {
+        width: 40%;
+        height: auto;
+        position: absolute;
+        left: 25%;  /* 25% */
+        top: 35%;  /* 35% */
+        animation: fliegen 10s infinite ease-in-out;
+        animation-direction: alternate;
+    }    
+}
+
+footer {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer a {
+    border: 2px solid black;
+    padding: 2px;
+    background-color: rgba(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(204, 1, 1);
+}

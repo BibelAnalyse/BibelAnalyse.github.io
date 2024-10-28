@@ -1,0 +1,77 @@
+body{
+    color: black;
+    background-color: aliceblue;
+    font-size: large;
+    text-align: center;
+}
+
+.dunkelhg {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#mainimage {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.normalpic {
+    display: inline;
+    max-height: 55vh;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallpic {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .normalpic {
+        display: none;
+    }
+
+    .smallpic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+p {
+    background-color: rgba(222, 104, 104, 0.25);
+    padding: 5px;
+}
+
+#lightball {
+    animation: flyforward 15s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flyforward {
+    50% {transform: scale(0.5,0.5);}
+}
+
+footer {
+    clear: both;
+    display: block;
+    text-align: center;
+    color: aliceblue;
+}
+
+footer a {
+    color: blue;
+    background-color: rgba(255, 255, 255);
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: medium;
+}
